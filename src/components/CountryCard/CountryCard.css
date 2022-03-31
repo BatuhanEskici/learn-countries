@@ -85,4 +85,45 @@ body {
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=App.css.map */
+
+.country-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #61dbfb;
+  width: 300px;
+  margin: 30px auto 0 auto;
+  padding-bottom: 15px;
+}
+
+.country-card-item {
+  width: 300px;
+  padding: 0 15px;
+}
+
+.country-card-item:not(.country-card-item:nth-child(2)) {
+  margin-top: 10px;
+}
+
+.country-card img {
+  width: 296px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.country-card h3 {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+/*# sourceMappingURL=CountryCard.css.map */

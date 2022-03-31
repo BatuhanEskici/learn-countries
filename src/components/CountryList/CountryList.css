@@ -85,4 +85,59 @@ body {
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=App.css.map */
+
+.country-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.country-list .country:not(.country:first-child) {
+  margin-top: 15px;
+}
+
+.country-list .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  padding-left: 46px;
+}
+
+.country-list .country a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.country-list .country a:hover {
+  color: #61dbfb;
+}
+
+.country-list .country img {
+  width: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=CountryList.css.map */
