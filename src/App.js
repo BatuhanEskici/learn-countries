@@ -40,7 +40,7 @@ export default function App() {
 }
 
 const getRandomCountry = (countries) => {
-  const country_id = Math.floor(Math.random() * 250);
+  const country_id = Math.floor(Math.random() * countries.length);
 
   const country_name_to_navigate = countries[country_id].name.common.toLowerCase();
 
